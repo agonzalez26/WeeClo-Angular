@@ -1,5 +1,9 @@
 <!--
-<a href="#home" class="nav-link btn-lg" data-toggle="modal" data-target="#exampleModal">Modal Login</a> -->
+this is the page that people come to when the get into the website.
+it is working with modals but there is no current backend connection or
+functionality to the buttons
+-->
+
 <nav class="navbar navbar-expand-md navbar-light border-bottom bg-white">
     <div class="container">
       <a class="navbar-brand brand" href="index.html">
@@ -26,6 +30,7 @@
     </div>
 </nav>
 
+<!--login modal-->
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modal-label" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -58,7 +63,6 @@
                     </div>
                   </div>
                   <a routerLink="/home" data-dismiss="modal" id="login-submit" class="btn btn-danger" >Let's Go!</a>
-
                   <!-- <button class="btn btn-danger" id="login-submit" type="button" name="button">Let's Go!</button> -->
               </fieldset>
             </form>
@@ -80,6 +84,7 @@
   </div>
 </div>
 
+<!--register modal-->
 <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="register-modal-label" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -354,39 +359,40 @@
   </div>
 </div>
 
-<!--forgot password-->
+<!--forgot password modal-->
 <div class="modal fade" id="forgot-password-modal" tabindex="-1" role="dialog" aria-labelledby="forgot-password-modal-label" aria-hidden="true">
-<div class="modal-dialog" role="document">
-  <div class="modal-content">
-    <div class="modal-header text-center">
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body">
-      <div class="row justify-content-center bg-white">
-        <div class="col-8">
-          <form name="basicform" id="basicform" method="post" action="yourpage.html" class="text-center">
-            <fieldset>
-              <legend class="text-center">
-                <h3>Whoops! Forgot Password?</h3>
-                <p class="text-muted">Give us your email address and we'll send you a temporary one!</p>
-              </legend>
-              <br>
-              <div class="form-group">
-                <label for="username-login">Email</label>
-                <input class="form-control" id="username-login" type="text" name="username-email" placeholder="Email">
-              </div>
-              <button class="btn btn-danger" id="forgot-password-submit" type="button" name="ForgotSubmit">Send It!</button>
-            </fieldset>
-          </form>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row justify-content-center bg-white">
+          <div class="col-8">
+            <form name="basicform" id="basicform" method="post" action="yourpage.html" class="text-center">
+              <fieldset>
+                <legend class="text-center">
+                  <h3>Whoops! Forgot Password?</h3>
+                  <p class="text-muted">Give us your email address and we'll send you a temporary one!</p>
+                </legend>
+                <br>
+                <div class="form-group">
+                  <label for="username-login">Email</label>
+                  <input class="form-control" id="username-login" type="text" name="username-email" placeholder="Email">
+                </div>
+                <button class="btn btn-danger" id="forgot-password-submit" type="button" name="ForgotSubmit">Send It!</button>
+              </fieldset>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-</div>
 
+<!--index page content-->
 <section id="home-intro" class="section background-img whole text-white">
   <div class="bg-overlay" ></div>
   <div class="container">
@@ -404,6 +410,7 @@
     </div>
   </div>
 </section>
+<!--quote section-->
 <section class="section" id="home-quote">
   <div class="container animation-element bounce-up cf ">
       <div class="row subject">
@@ -414,6 +421,8 @@
       </div>
   </div>
 </section>
+
+<!--information page-->
 <section class="section bg-light" id="home-information">
   <div class="container">
     <div class="row  my-3 my-md-5 align-items-center " >
@@ -443,6 +452,7 @@
      </div>
    </div>
 
+   <!--get the person to login or register-->
    <div class="row my-2 my-md-4 justify-content-center" >
       <div class="col-md-8 text-center align-items-center">
         <p><a class="btn btn-danger text-center my-3" href="#signup-modal" data-toggle="modal" data-target="#signup-modal" data-dismiss="modal"> Join your neighbors!</a></p>
